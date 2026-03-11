@@ -27,7 +27,7 @@ jobs:
 
     - name: Build with PyInstaller
       run: |
-        pyinstaller --noconsole --onefile --name "WebP Converter" main.py
+        pyinstaller --noconsole --onefile --name "WebP Converter" --collect-all customtkinter main.py
 
     - name: Rename executable for release
       run: |
