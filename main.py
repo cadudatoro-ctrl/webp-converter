@@ -9,7 +9,7 @@ class WebpConverterApp(ctk.CTk):
         super().__init__()
 
         self.title("WebP Sequence Converter")
-        self.geometry("500x650")
+        self.geometry("500x700")
         
         self.sequences_map = {} # holds sequence_name -> list of files
         
