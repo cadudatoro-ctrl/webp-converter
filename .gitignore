@@ -16,6 +16,13 @@ dist/
 # macOS
 .DS_Store
 
+# C environment
+*.o
+*.out
+
+# Ignore session reports
+session_report.md
+
 # Images
 input/
 output/
