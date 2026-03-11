@@ -3,13 +3,13 @@ name: Build Windows Executable
 on:
   push:
     branches: [ "main", "master" ]
-  pull_request:
-    branches: [ "main", "master" ]
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: windows-latest
+    permissions:
+      contents: write
 
     steps:
     - uses: actions/checkout@v4
@@ -29,8 +29,21 @@ jobs:
       run: |
         pyinstaller --noconsole --onefile --name "WebP Converter" main.py
 
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
+    - name: Rename executable for release
+      run: |
+        ren "dist\WebP Converter.exe" "WebP-Converter-Windows.exe"
+
+    - name: Create Release and Upload Asset
+      uses: softprops/action-gh-release@v2
       with:
-        name: WebP-Converter-Windows
-        path: dist/WebP Converter.exe
+        tag_name: latest
+        name: Latest Windows Build
+        target_commitish: ${{ github.sha }}
+        files: dist/WebP-Converter-Windows.exe
+        body: |
+          Automatic build of the WebP Converter for Windows 11.
+          Download the `.exe` file below and run it (no installation required).
+          
+          *Note: Windows SmartScreen may show a warning since this is a self-published app. Click "More info" -> "Run anyway".*
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

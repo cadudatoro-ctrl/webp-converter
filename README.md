@@ -26,15 +26,12 @@ python main.py
 ```
 
 ### 🪟 For Windows Users (Windows 11)
-The Windows version is compiled into a single, standalone executable `.exe` file via GitHub Actions. **You do not need to install Python to run it.**
+The Windows version is compiled into a single, standalone executable `.exe` file. **You do not need to install Python to run it.**
 
-1. Go to the **[Actions tab](../../actions)** of this repository on GitHub.
-2. Click on the latest successful **Build Windows Executable** workflow run.
-3. Scroll down to the **Artifacts** section at the bottom of the page.
-4. Download the **`WebP-Converter-Windows`** zip file.
-5. Extract the `.zip` file on your Windows computer.
-6. Double-click **`WebP Converter.exe`** to launch the app!
-   *(Note: Windows SmartScreen may show a "Windows protected your PC" warning. Click **More info** -> **Run anyway**).*
+1. Go to the **[Releases page](../../releases/latest)** of this repository on GitHub.
+2. Under the **Assets** section of the latest release, click on **`WebP-Converter-Windows.exe`** to download it.
+3. Once downloaded, simply double-click **`WebP-Converter-Windows.exe`** to launch the app!
+   *(Note: Windows SmartScreen may show a "Windows protected your PC" warning since this is a self-published app. Click **More info** -> **Run anyway**).*
 
 ## How to Convert Images
 
