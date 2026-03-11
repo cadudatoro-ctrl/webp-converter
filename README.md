@@ -33,6 +33,17 @@ The Windows version is compiled into a single, standalone executable `.exe` file
 3. Once downloaded, simply double-click **`WebP-Converter-Windows.exe`** to launch the app!
    *(Note: Windows SmartScreen may show a "Windows protected your PC" warning since this is a self-published app. Click **More info** -> **Run anyway**).*
 
+### 🐧 For Linux Users (Ubuntu)
+The Linux version is provided as a standalone binary executable file. **You do not need to run this through Python.**
+
+1. Go to the **[Releases page](../../releases/latest)** of this repository on GitHub.
+2. Under the **Assets** section of the latest release, click on **`WebP-Converter-Linux`** to download it.
+3. Once downloaded, open your terminal and grant it execution permissions before running it:
+```bash
+chmod +x WebP-Converter-Linux
+./WebP-Converter-Linux
+```
+
 ## How to Convert Images
 
 1. **Input Directory**: Click "Browse" and select a folder containing your image sequence(s).
