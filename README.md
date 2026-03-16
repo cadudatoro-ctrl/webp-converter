@@ -52,3 +52,7 @@ chmod +x WebP-Converter-Linux
 4. **Adjust Settings**: Set the desired FPS and Quality.
 5. **Resize (Optional)**: Check "Resize Output?" to input a specific width and height for your final WebP file.
 6. **Convert**: Click **Convert to WebP** and wait for the success message.
+
+## Credits
+
+Created by **Carlos Oliveira** (cadudatoro@gmail.com) | [datoro.com](https://datoro.com)
