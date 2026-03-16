@@ -90,7 +90,7 @@ class WebpConverterApp(ctk.CTk):
         self.convert_btn.grid(row=8, column=0, columnspan=3, padx=20, pady=(10, 5), sticky="ew")
 
         # Credentials Label
-        self.credentials_label = ctk.CTkLabel(self, text="Created by Carlos Oliveira , passionated by art and science", font=ctk.CTkFont(size=10, slant="italic"), text_color="gray")
+        self.credentials_label = ctk.CTkLabel(self, text="Created by Carlos Oliveira (cadudatoro@gmail.com) | datoro.com", font=ctk.CTkFont(size=10, slant="italic"), text_color="gray")
         self.credentials_label.grid(row=9, column=0, columnspan=3, pady=(0, 10))
 
 
